@@ -1,0 +1,6 @@
+# Put this in the BUNDLE REPO as ".gitattributes" (note the leading dot).
+#
+# Git on Windows can rewrite line endings in files it misidentifies as text.
+# A bundle with two bytes changed fails its GCM tag and the app reports a wrong
+# password - a confusing failure with no obvious cause. This forbids it.
+*.bin binary -text
